@@ -1,6 +1,6 @@
 <template>
   <div class="wraps">
-    <van-swipe class="swiper" vertical :autoplay="3000" :duration="500">
+    <!-- <van-swipe class="swiper" vertical :autoplay="3000" :duration="500">
       <van-swipe-item>
         <img src="@/assets/2.png" alt>
       </van-swipe-item>
@@ -10,9 +10,9 @@
       <van-swipe-item>
         <img src="@/assets/1-3.png" alt>
       </van-swipe-item>
-    </van-swipe>
+    </van-swipe> -->
     <div class="wrapper">
-      <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+      <!-- <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
         <dl class="dls">
           <div class="phoenix">
             <img src="@/assets/phoenix.png" alt>
@@ -52,7 +52,7 @@
             <button class="particulars" @click="details">查看详情</button>
           </dd>
         </dl>
-      </van-pull-refresh>
+      </van-pull-refresh> -->
       <!-- 输入身份证客户号识别 -->
       <!-- <Popout type="confirm" @took="okfall" @tocancel="cancelfall" :showstate="showc"> -->
       <!-- 客户识别身份识别 -->
@@ -138,9 +138,9 @@
       </Speech> -->
 
       <div class="Scanning">
-        <div class="scann" @click="opent">
+        <!-- <div class="scann" @click="opent">
           <img src="@/assets/yuyin1.png" alt>
-        </div>
+        </div> -->
         <div class="scann" @click="dilts">
           <!--点击客户识别显示影藏-->
           <img :src="this.i == 0 ? srcs : nosrc" alt>
@@ -177,8 +177,8 @@ export default {
       Idata: "",
       arrs: [],
       i: 0,
-      srcs: require("@/assets/scan1.png"),
-      nosrc: require("@/assets/voice1.png")
+      // srcs: require("@/assets/scan1.png"),
+      // nosrc: require("@/assets/voice1.png")
     };
   },
   computed: {},
