@@ -184,10 +184,10 @@ export default {
   computed: {},
   methods: {
     onRefresh() {
-      setTimeout(() => {
-        Toast("刷新成功");
-        this.isLoading = false;
-      }, 1000);
+      // setTimeout(() => {
+      //   Toast("刷新成功");
+      //   this.isLoading = false;
+      // }, 1000);
     },
     dilts() {
       //客户识别
