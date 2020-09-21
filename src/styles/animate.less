@@ -1,0 +1,161 @@
+@animation-duration-base: .2s;
+@animation-duration-fast: .3s;
+@animation-duration-long: .8s;
+
+@keyframes lm-slide-up-enter {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes lm-slide-up-leave {
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes lm-slide-down-enter {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes lm-slide-down-leave {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes lm-slide-left-enter {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes lm-slide-left-leave {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes lm-slide-right-enter {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes lm-slide-right-leave {
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes lm-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lm-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes lm-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes lm-popup-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes lm-popup-fade-out {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.lm-popup-fade {
+  &-enter-active {
+    animation: @animation-duration-base lm-popup-fade-in;
+  }
+
+  &-leave-active {
+    animation: @animation-duration-base lm-popup-fade-out;
+  }
+}
+
+.lm-fade {
+  &-enter-active {
+    animation: @animation-duration-base lm-fade-in;
+  }
+
+  &-leave-active {
+    animation: @animation-duration-base lm-fade-out;
+  }
+}
+
+.lm-slide-up {
+  &-enter-active {
+    animation: lm-slide-up-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: lm-slide-up-leave @animation-duration-base both ease;
+  }
+}
+
+.lm-slide-down {
+  &-enter-active {
+    animation: lm-slide-down-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: lm-slide-down-leave @animation-duration-base both ease;
+  }
+}
+
+.lm-slide-left {
+  &-enter-active {
+    animation: lm-slide-left-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: lm-slide-left-leave @animation-duration-base both ease;
+  }
+}
+
+.lm-slide-right {
+  &-enter-active {
+    animation: lm-slide-right-enter @animation-duration-base both ease;
+  }
+
+  &-leave-active {
+    animation: lm-slide-right-leave @animation-duration-base both ease;
+  }
+}
